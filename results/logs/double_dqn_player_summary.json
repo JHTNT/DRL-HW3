@@ -1,0 +1,22 @@
+{
+  "algorithm": "double_dqn",
+  "mode": "player",
+  "episodes": 1000,
+  "training_time_seconds": 18.800864678807557,
+  "global_steps": 7845,
+  "final_epsilon": 0.06746959575671443,
+  "average_training_reward_last_100": 5.98,
+  "average_training_steps_last_100": 4.82,
+  "training_win_rate_last_100": 0.99,
+  "evaluation": {
+    "episodes": 200,
+    "win_rate": 1.0,
+    "loss_rate": 0.0,
+    "average_reward": 6.62,
+    "average_steps": 4.38
+  },
+  "model_path": "results/models/double_dqn_player.pt",
+  "loss_plot": "results/figures/double_dqn_player_loss.png",
+  "reward_plot": "results/figures/double_dqn_player_reward.png",
+  "win_rate_plot": "results/figures/double_dqn_player_win_rate.png"
+}

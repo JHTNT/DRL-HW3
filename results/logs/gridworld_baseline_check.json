@@ -1,0 +1,64 @@
+{
+  "modes": [
+    {
+      "mode": "static",
+      "state_shape": [
+        1,
+        64
+      ],
+      "actions": [
+        "u",
+        "d",
+        "l",
+        "r"
+      ],
+      "random_policy": {
+        "episodes": 20,
+        "win_rate": 0.05,
+        "loss_rate": 0.65,
+        "average_reward": -32.25,
+        "average_steps": 26.95
+      }
+    },
+    {
+      "mode": "player",
+      "state_shape": [
+        1,
+        64
+      ],
+      "actions": [
+        "u",
+        "d",
+        "l",
+        "r"
+      ],
+      "random_policy": {
+        "episodes": 20,
+        "win_rate": 0.4,
+        "loss_rate": 0.35,
+        "average_reward": -23.45,
+        "average_steps": 24.7
+      }
+    },
+    {
+      "mode": "random",
+      "state_shape": [
+        1,
+        64
+      ],
+      "actions": [
+        "u",
+        "d",
+        "l",
+        "r"
+      ],
+      "random_policy": {
+        "episodes": 20,
+        "win_rate": 0.65,
+        "loss_rate": 0.3,
+        "average_reward": -6.65,
+        "average_steps": 11.1
+      }
+    }
+  ]
+}

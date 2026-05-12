@@ -1,0 +1,19 @@
+{
+  "algorithm": "naive_dqn",
+  "mode": "static",
+  "episodes": 500,
+  "training_time_seconds": 10.814250901341438,
+  "final_epsilon": 0.08411698376511417,
+  "average_training_reward_last_50": 3.28,
+  "average_training_steps_last_50": 7.72,
+  "evaluation": {
+    "episodes": 100,
+    "win_rate": 1.0,
+    "loss_rate": 0.0,
+    "average_reward": 4.0,
+    "average_steps": 7.0
+  },
+  "model_path": "results/models/naive_dqn_static.pt",
+  "loss_plot": "results/figures/naive_dqn_static_loss.png",
+  "reward_plot": "results/figures/naive_dqn_static_reward.png"
+}

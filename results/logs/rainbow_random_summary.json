@@ -1,0 +1,140 @@
+{
+  "algorithm": "rainbow_style_dqn",
+  "mode": "random",
+  "episodes": 3000,
+  "training_time_seconds": 324.6610249299556,
+  "global_steps": 45571,
+  "optimization_steps": 45070,
+  "final_epsilon": 0.0,
+  "final_beta": 1.0,
+  "average_training_reward_last_100": -1.36,
+  "average_training_steps_last_100": 9.42,
+  "training_win_rate_last_100": 0.79,
+  "rainbow_components": {
+    "double_dqn_target": true,
+    "dueling_network": true,
+    "prioritized_replay": true,
+    "n_step_return": 3,
+    "noisy_network": true,
+    "distributional_dqn": false
+  },
+  "training_tips": {
+    "target_network": true,
+    "huber_loss": true,
+    "gradient_clip": 5.0,
+    "replay_warmup": 500,
+    "lr_scheduler": {
+      "enabled": true,
+      "step_size": 1000,
+      "gamma": 0.95,
+      "final_lr": 4.972012849354609e-05
+    },
+    "per_alpha": 0.6,
+    "per_beta_start": 0.4,
+    "per_beta_final": 1.0
+  },
+  "evaluation": {
+    "episodes": 200,
+    "win_rate": 0.81,
+    "loss_rate": 0.055,
+    "average_reward": -0.635,
+    "average_steps": 9.05
+  },
+  "random_policy_baseline": {
+    "episodes": 200,
+    "win_rate": 0.54,
+    "loss_rate": 0.39,
+    "average_reward": -12.285,
+    "average_steps": 14.715
+  },
+  "eval_history": [
+    {
+      "episode": 250.0,
+      "win_rate": 0.315,
+      "loss_rate": 0.085,
+      "average_reward": -28.255,
+      "average_steps": 30.955
+    },
+    {
+      "episode": 500.0,
+      "win_rate": 0.405,
+      "loss_rate": 0.085,
+      "average_reward": -23.055,
+      "average_steps": 26.745
+    },
+    {
+      "episode": 750.0,
+      "win_rate": 0.565,
+      "loss_rate": 0.095,
+      "average_reward": -13.29,
+      "average_steps": 18.65
+    },
+    {
+      "episode": 1000.0,
+      "win_rate": 0.575,
+      "loss_rate": 0.08,
+      "average_reward": -13.41,
+      "average_steps": 19.015
+    },
+    {
+      "episode": 1250.0,
+      "win_rate": 0.615,
+      "loss_rate": 0.11,
+      "average_reward": -9.86,
+      "average_steps": 15.635
+    },
+    {
+      "episode": 1500.0,
+      "win_rate": 0.72,
+      "loss_rate": 0.065,
+      "average_reward": -5.695,
+      "average_steps": 13.03
+    },
+    {
+      "episode": 1750.0,
+      "win_rate": 0.72,
+      "loss_rate": 0.045,
+      "average_reward": -6.425,
+      "average_steps": 13.94
+    },
+    {
+      "episode": 2000.0,
+      "win_rate": 0.73,
+      "loss_rate": 0.075,
+      "average_reward": -4.485,
+      "average_steps": 11.84
+    },
+    {
+      "episode": 2250.0,
+      "win_rate": 0.765,
+      "loss_rate": 0.075,
+      "average_reward": -2.42,
+      "average_steps": 10.16
+    },
+    {
+      "episode": 2500.0,
+      "win_rate": 0.78,
+      "loss_rate": 0.07,
+      "average_reward": -1.945,
+      "average_steps": 9.895
+    },
+    {
+      "episode": 2750.0,
+      "win_rate": 0.745,
+      "loss_rate": 0.09,
+      "average_reward": -2.885,
+      "average_steps": 10.27
+    },
+    {
+      "episode": 3000.0,
+      "win_rate": 0.82,
+      "loss_rate": 0.065,
+      "average_reward": 0.34,
+      "average_steps": 8.095
+    }
+  ],
+  "model_path": "results/models/rainbow_random.pt",
+  "loss_plot": "results/figures/rainbow_random_loss.png",
+  "reward_plot": "results/figures/rainbow_random_reward.png",
+  "win_rate_plot": "results/figures/rainbow_random_win_rate.png"
+}

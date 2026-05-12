@@ -1,0 +1,22 @@
+{
+  "algorithm": "dueling_dqn",
+  "mode": "player",
+  "episodes": 1000,
+  "training_time_seconds": 25.949765322729945,
+  "global_steps": 7634,
+  "final_epsilon": 0.06746959575671443,
+  "average_training_reward_last_100": 6.57,
+  "average_training_steps_last_100": 4.43,
+  "training_win_rate_last_100": 1.0,
+  "evaluation": {
+    "episodes": 200,
+    "win_rate": 1.0,
+    "loss_rate": 0.0,
+    "average_reward": 6.74,
+    "average_steps": 4.26
+  },
+  "model_path": "results/models/dueling_dqn_player.pt",
+  "loss_plot": "results/figures/dueling_dqn_player_loss.png",
+  "reward_plot": "results/figures/dueling_dqn_player_reward.png",
+  "win_rate_plot": "results/figures/dueling_dqn_player_win_rate.png"
+}

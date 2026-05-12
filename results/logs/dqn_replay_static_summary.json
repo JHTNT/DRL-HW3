@@ -1,0 +1,19 @@
+{
+  "algorithm": "dqn_replay",
+  "mode": "static",
+  "episodes": 500,
+  "training_time_seconds": 12.045681641437113,
+  "final_epsilon": 0.08411698376511417,
+  "average_training_reward_last_50": 3.06,
+  "average_training_steps_last_50": 7.54,
+  "evaluation": {
+    "episodes": 100,
+    "win_rate": 1.0,
+    "loss_rate": 0.0,
+    "average_reward": 4.0,
+    "average_steps": 7.0
+  },
+  "model_path": "results/models/dqn_replay_static.pt",
+  "loss_plot": "results/figures/dqn_replay_static_loss.png",
+  "reward_plot": "results/figures/dqn_replay_static_reward.png"
+}

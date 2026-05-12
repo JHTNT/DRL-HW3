@@ -1,0 +1,138 @@
+{
+  "algorithm": "dueling_double_dqn_lightning_style",
+  "framework": "PyTorch Lightning-style manual optimization",
+  "mode": "random",
+  "episodes": 3000,
+  "training_time_seconds": 92.16144913993776,
+  "global_steps": 27170,
+  "optimization_steps": 26671,
+  "final_epsilon": 0.0973450363211626,
+  "average_training_reward_last_100": 1.75,
+  "average_training_steps_last_100": 8.28,
+  "training_win_rate_last_100": 0.92,
+  "training_tips": {
+    "dueling_network": true,
+    "double_dqn_target": true,
+    "target_network": true,
+    "experience_replay": true,
+    "replay_warmup": 500,
+    "huber_loss": true,
+    "gradient_clip": 5.0,
+    "epsilon_decay": {
+      "start": 1.0,
+      "final": 0.05,
+      "decay": 1000.0
+    },
+    "lr_scheduler": {
+      "enabled": true,
+      "step_size": 1000,
+      "gamma": 0.95,
+      "final_lr": 0.00013176004723287096
+    },
+    "periodic_evaluation": true
+  },
+  "evaluation": {
+    "episodes": 200,
+    "win_rate": 0.895,
+    "loss_rate": 0.0,
+    "average_reward": 2.135,
+    "average_steps": 7.71
+  },
+  "random_policy_baseline": {
+    "episodes": 200,
+    "win_rate": 0.49,
+    "loss_rate": 0.47,
+    "average_reward": -12.655,
+    "average_steps": 13.815
+  },
+  "eval_history": [
+    {
+      "episode": 250.0,
+      "win_rate": 0.33,
+      "loss_rate": 0.05,
+      "average_reward": -28.7,
+      "average_steps": 31.88
+    },
+    {
+      "episode": 500.0,
+      "win_rate": 0.41,
+      "loss_rate": 0.025,
+      "average_reward": -25.065,
+      "average_steps": 29.35
+    },
+    {
+      "episode": 750.0,
+      "win_rate": 0.535,
+      "loss_rate": 0.01,
+      "average_reward": -18.295,
+      "average_steps": 24.09
+    },
+    {
+      "episode": 1000.0,
+      "win_rate": 0.635,
+      "loss_rate": 0.015,
+      "average_reward": -12.155,
+      "average_steps": 19.005
+    },
+    {
+      "episode": 1250.0,
+      "win_rate": 0.72,
+      "loss_rate": 0.015,
+      "average_reward": -7.32,
+      "average_steps": 15.105
+    },
+    {
+      "episode": 1500.0,
+      "win_rate": 0.725,
+      "loss_rate": 0.005,
+      "average_reward": -7.325,
+      "average_steps": 15.255
+    },
+    {
+      "episode": 1750.0,
+      "win_rate": 0.765,
+      "loss_rate": 0.01,
+      "average_reward": -4.885,
+      "average_steps": 13.21
+    },
+    {
+      "episode": 2000.0,
+      "win_rate": 0.775,
+      "loss_rate": 0.015,
+      "average_reward": -4.155,
+      "average_steps": 12.545
+    },
+    {
+      "episode": 2250.0,
+      "win_rate": 0.79,
+      "loss_rate": 0.0,
+      "average_reward": -3.815,
+      "average_steps": 12.505
+    },
+    {
+      "episode": 2500.0,
+      "win_rate": 0.835,
+      "loss_rate": 0.0,
+      "average_reward": -1.37,
+      "average_steps": 10.555
+    },
+    {
+      "episode": 2750.0,
+      "win_rate": 0.845,
+      "loss_rate": 0.01,
+      "average_reward": -0.3,
+      "average_steps": 9.505
+    },
+    {
+      "episode": 3000.0,
+      "win_rate": 0.81,
+      "loss_rate": 0.0,
+      "average_reward": -2.7,
+      "average_steps": 11.61
+    }
+  ],
+  "model_path": "results/models/lightning_dqn_random.pt",
+  "loss_plot": "results/figures/lightning_dqn_random_loss.png",
+  "reward_plot": "results/figures/lightning_dqn_random_reward.png",
+  "win_rate_plot": "results/figures/lightning_dqn_random_win_rate.png"
+}
